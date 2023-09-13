@@ -2,6 +2,7 @@
 import { HardhatUserConfig } from "hardhat/types";
 
 import "../../../src/index";
+import "@nomiclabs/hardhat-ethers";
 
 const config: HardhatUserConfig = {
   solidity: "0.7.3",
