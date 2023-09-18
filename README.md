@@ -9,19 +9,19 @@ _Warning: This is a bit of a hack, some modules may break._
 ## Installation
 
 ```bash
-yarn add hardhat-change-network
+yarn add hardhat-change-network-upgrade
 ```
 
 Import the plugin in your `hardhat.config.js`:
 
 ```js
-require("hardhat-change-network");
+require("hardhat-change-network-upgrade");
 ```
 
 Or if you are using TypeScript, in your `hardhat.config.ts`:
 
 ```ts
-import "hardhat-change-network";
+import "hardhat-change-network-upgrade";
 ```
 
 ## Usage
@@ -29,11 +29,11 @@ import "hardhat-change-network";
 Change the network to any network defined in hardhat.config.js with this simple call:
 
 ```javascript
-hre.changeNetwork('goerli');
+hre.changeNetwork("goerli");
 ```
 
 You can also use this library to retrieve a standard web3 provider object for a given network:
 
 ```javascript
-const provider = hre.getProvider('goerli');
+const provider = hre.getProvider("goerli");
 ```
